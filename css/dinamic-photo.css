@@ -1,0 +1,50 @@
+/* IMG RESPONSIVE */
+@media (max-width: 1200px) {
+
+    .post img.lic {
+
+        width: 936px !important;
+
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .post img.lic {
+
+        width: 696px !important;
+
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .post img.lic {
+
+        width: 516px !important;
+
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .post img.lic {
+
+        width: 516px !important;
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .post img.lic {
+
+        width: 550px !important;
+
+    }
+
+}

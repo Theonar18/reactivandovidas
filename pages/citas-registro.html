@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- ___________________________________________________________ -->
+    <link rel="stylesheet" href="../css/boostrap.css" />
+    <link rel="stylesheet" href="../css/st-general.css" />
+    <link rel="stylesheet" href="../css/st-article.css" />
+    <link rel="stylesheet" href="../css/dinamic-header.css" />
+    <link rel="stylesheet" href="../css/st-form-regcitas.css">
+    <!-- ___________________________________________________________ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Citas</title>
+  </head>
+  <body>
+    <section class="contenedor-dls">
+      <header class="header-dls container-fluid sticky-top">
+        <div class="logo"><a href="../index.html">Reactivando Vidas</a></div>
+        <button class="toggle">
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <nav class="navegacion-dls">
+          <ul class="menu">
+            <a href="../index.html" class="nav-link">
+              <li>
+                <ion-icon name="home"></ion-icon>
+                <p>Inicio</p>
+              </li>
+            </a>
+            <a href="servicios.html" class="nav-link">
+              <li>
+                <ion-icon name="medkit"></ion-icon>
+                <p>Servicios</p>
+              </li>
+            </a>
+            <a href="citas.html" class="activo nav-link">
+              <li>
+                <ion-icon name="calendar"></ion-icon>
+                <p>Citas</p>
+              </li>
+            </a>
+            <a href="nosotros.html" class="nav-link">
+              <li>
+                <ion-icon name="id-card"></ion-icon>
+                <p>Nosotros</p>
+              </li>
+            </a>
+            <a href="login.html" class="nav-link">
+              <li>
+                <ion-icon name="person" class="login"></ion-icon>
+                <p class="login">Log In</p>
+              </li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <section class="contenido-dls">
+        <section class="formulario-citas">
+          <h1>Agenda / Registro de Cita</h1>
+          <form class="registros">
+            <div class="form-group">
+              <label for="descripcion">Descripción:</label>
+              <textarea name="descripcion" id="descripcion" placeholder="Describa su situación" required></textarea>
+            </div>
+            <div class="date-form">
+              <label for="fecha_cita">Fecha de Cita:</label>
+              <input type="date" id="fecha_cita" name="fecha_cita" required />
+            </div>
+            <div class="hour-form">
+              <label for="hora_cita">Hora de Cita:</label>
+              <input type="time" id="hora_cita" name="hora_cita" required>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio:</label>
+              <select name="servicios" id="servicios" required>
+                  <option value="paralisis-facial">Paralisis Facial</option>
+                  <option value="esguince">Esguince</option>
+                  <option value="post-fracturas">Post Fracturas</option>
+                  <option value="desgarres-musculares">Desgarres Musculares</option>
+                  <option value="distenciones">Distenciones</option>
+                  <option value="sindrome-del-tuner-carpiano">Sindrome del Tuner Carpiano</option>
+                  <option value="nervio-siatico">Nervio Siatico</option>
+                  <option value="masaje-relajante-cuerpo-completo">Masaje Relajante - Cuerpo Completo</option>
+                  <option value="masaje-relajante-espalda">Masaje Relajante - Espalda</option>
+                  <option value="masaje-descontracturante-cuerpo-completo">Masaje Descontracturante - Cuerpo Completo</option>
+                  <option value="masaje-descontracturante-espalda">Masaje Descontracturante - Espalda</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="empleado">Empleado:</label>
+              <select id="empleado" name="empleado" required>
+                <option value="dueño">Lic. José Carlos Naredo Matamoros</option>
+              </select>
+            </div>
+            <h1>Datos del paciente:</h1>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="apellidoP">Apellido Paterno:</label>
+              <input type="text" name="apellidoP" id="apellidoP" required />
+            </div>
+            <div class="form-group">
+              <label for="apellidoM">Apellido Materno:</label>
+              <input type="text" name="apellidoM" id="apellidoM" />
+            </div>
+            <div class="date-form">
+              <label for="fecha-de-nacimiento">Fecha de Nacimiento:</label>
+              <input type="date" id="fecha-de-nacimiento" name="fecha-de-nacimiento" required />
+            </div>
+            <div class="form-group">
+              <label for="numero-telefono">Número de Teléfono / Celular:</label>
+              <input type="tel" name="numero-telefono" id="numero-telefono" required />
+            </div>
+            <div class="botones">
+              <button type="submit">Agregar</button>
+              <button type="reset">Reiniciar</button>
+              <a href="citas.html"><button type="button">Volver</button></a>
+            </div>
+          </form>
+        </section>
+      </section>
+
+      <!-- BOTON IR HACIA ARRIBA -->
+      <div class="button-up border border-white" id="bt-up">
+        <ion-icon name="caret-up"></ion-icon>
+      </div>
+
+      <footer class="footer-dls">
+        <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-md-4 border-top pb-2">
+              <p id="copyright">Copyright © 2024.<br />Reactivando Vidas.</p>
+            </div>
+            <div class="col-md-4 border-top pb-2">
+              <p id="correo-electronico">
+                Contáctanos en
+                <a
+                  href="mailto:reactivando.vidas.cuitlahuac@gmail.com"
+                  id="link-mail"
+                >
+                  reactivando.vidas.cuitlahuac@gmail.com
+                </a>
+              </p>
+            </div>
+            <div class="col-md-4 border-top pb-2">
+              <ul class="footer-links">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100077319315258"
+                    ><ion-icon name="logo-facebook"></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../js/boostrp.js"></script>
+    <script src="../css/bootstrap.min.css"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <!-- ___________________________________________________________ -->
+    <script src="../js/menu.js"></script>
+  </body>
+</html>
