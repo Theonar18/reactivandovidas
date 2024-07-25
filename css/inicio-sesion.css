@@ -1,0 +1,130 @@
+.footer-1 {
+    bottom: 0;
+}
+
+.post {
+
+    box-shadow: none !important;
+
+}
+
+/* --------------------------------- */
+
+.inicio-registro {
+
+    width: 700px;
+    margin: 0 auto;
+
+    background-color: #dfeeff;
+
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    display: block;
+    align-content: center;
+    align-items: center;
+
+}
+
+.inicio-registro .botones-inicio-registro {
+
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    padding: 1rem 1rem 0 1rem;
+
+}
+
+.inicio-registro .botones-inicio-registro button {
+
+    border-radius: 50px;
+    font-weight: bold;
+    border-bottom: solid #6fafff;
+    transition: all 0.3s;
+
+}
+
+.inicio-registro .botones-inicio-registro button.activo {
+
+    border-bottom: solid blue;
+    background-color: #c9e2ff;
+    color: blue;
+
+}
+
+.inicio-registro .botones-inicio-registro button:hover {
+
+    border-bottom: solid blue;
+    background-color: #c9e2ff;
+
+}
+
+.inicio-registro .form-inicio-sesion,
+.inicio-registro .form-registro-sesion{
+
+    padding: 0 2rem;
+
+}
+
+.inicio-registro div.inactivo,
+.inicio-registro div.inactivo{
+
+    display: none;
+    
+}
+
+.inicio-registro .form-inicio-sesion form,
+.inicio-registro .form-registro-sesion form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+.inicio-registro .form-inicio-sesion input,
+.inicio-registro .form-registro-sesion input {
+
+    margin-bottom: 1rem;
+    border: none;
+
+}
+
+.inicio-registro .form-inicio-sesion button,
+.inicio-registro .form-registro-sesion button {
+
+    background-color: #6fafff;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+
+}
+
+.inicio-registro .form-inicio-sesion button:hover,
+.inicio-registro .form-registro-sesion button:hover {
+
+    background-color: #499bff;
+
+}
+
+/* RESPONSIVE LOGIN */
+
+@media (max-width: 992px) {
+
+    .inicio-registro {
+
+        width: 100%;
+        
+    }
+    
+}
+
+.btn-showpass-mp {
+
+    background: none !important;
+    color: black !important;
+    padding: 0 !important;
+    font-size: smaller !important;
+
+}
